@@ -1,33 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navbar.css";
 import logo from "../../Assets/Images/logo.svg";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState("home");
+  const locator = useLocation();
   return (
     <div className="nav">
-      <img src={logo} alt="STC" className="nav-logo" />
+      <Link to="/">
+        <img src={logo} alt="STC" className="nav-logo" />
+      </Link>
       <div className="nav-links">
-        <div
-          className={active === "groups" ? "nav-link nav-acitve" : "nav-link"}
+        <Link
+          to="/groups"
+          className={
+            locator.pathname === "/groups" ? "nav-link nav-acitve" : "nav-link"
+          }
         >
           Groups
-        </div>
-        <div
-          className={active === "events" ? "nav-link nav-acitve" : "nav-link"}
+        </Link>
+        <Link
+          to="/events"
+          className={
+            locator.pathname === "/events" ? "nav-link nav-acitve" : "nav-link"
+          }
         >
           Events
-        </div>
-        <div
-          className={active === "team" ? "nav-link nav-acitve" : "nav-link"}
+        </Link>
+        <Link
+          to="/team"
+          className={
+            locator.pathname === "/team" ? "nav-link nav-acitve" : "nav-link"
+          }
         >
           Team
-        </div>
-        <div
-          className={active === "contact" ? "nav-link nav-acitve" : "nav-link"}
+        </Link>
+        <Link
+          to="/contact"
+          className={
+            locator.pathname === "/contact" ? "nav-link nav-acitve" : "nav-link"
+          }
         >
           Contact Us
-        </div>
+        </Link>
       </div>
     </div>
   );

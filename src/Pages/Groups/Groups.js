@@ -1,10 +1,13 @@
-import React from 'react'
-import "./groups.css"
+import React from "react";
+import "./groups.css";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const Groups = () => {
   return (
-    <div>Groups</div>
-  )
-}
+    <div>
+      <Navbar />
+    </div>
+  );
+};
 
-export default Groups
+export default Groups;
