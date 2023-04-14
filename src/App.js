@@ -5,6 +5,7 @@ import Groups from "./Pages/Groups/Groups";
 import Events from "./Pages/Events/Events";
 import Team from "./Pages/Team/Team";
 import Contact from "./Pages/Contact/Contact";
+import TeamCard from "./Components/Cards/TeamCard/TeamCard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tcard" element={<TeamCard />} />
         </Routes>
       </Router>
     </div>
