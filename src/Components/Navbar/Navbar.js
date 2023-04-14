@@ -12,6 +12,14 @@ const Navbar = () => {
       </Link>
       <div className="nav-links">
         <Link
+          to="/"
+          className={
+            locator.pathname === "/" ? "nav-link nav-acitve" : "nav-link"
+          }
+        >
+          Home
+        </Link>
+        <Link
           to="/groups"
           className={
             locator.pathname === "/groups" ? "nav-link nav-acitve" : "nav-link"
