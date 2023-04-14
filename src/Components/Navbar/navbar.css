@@ -7,6 +7,10 @@
   background: #ffffff;
   border-bottom: 1px solid #F2F4F7;
   padding: 18px 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .nav-links {
   display: flex;

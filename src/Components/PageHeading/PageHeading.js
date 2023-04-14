@@ -1,10 +1,13 @@
-import React from 'react'
-import "./pageHeading.css"
+import React from "react";
+import "./pageHeading.css";
 
-const PageHeading = () => {
+const PageHeading = ({ title, subTitle }) => {
   return (
-    <div>PageHeading</div>
-  )
-}
+    <div className="heading-flex">
+      <h1 className="title">{title}</h1>
+      <h3 className="sub-title">{subTitle}</h3>
+    </div>
+  );
+};
 
-export default PageHeading
+export default PageHeading;
