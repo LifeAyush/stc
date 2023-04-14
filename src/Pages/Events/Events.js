@@ -2,6 +2,9 @@ import React from "react";
 import "./events.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
+import sampleImage1 from "../../Assets/Images/sampleImg1.png";
+import sampleImage2 from "../../Assets/Images/sampleImg2.png";
+import sampleImage3 from "../../Assets/Images/sampleImg3.png";
 
 const Events = () => {
   const filter = [
@@ -20,6 +23,48 @@ const Events = () => {
     {
       id: 4,
       name: "This Month",
+    },
+  ];
+  const eventData = [
+    {
+      id: 1,
+      img: sampleImage1,
+      group: "SDS Labs",
+      title: "UX review presentations",
+      date: "15/08/2022",
+      pocImg: sampleImage3,
+      pocName: "Somesh Solanki",
+      pocContact: "9461801990",
+    },
+    {
+      id: 2,
+      img: sampleImage2,
+      group: "DSG",
+      title: "ML review presentations",
+      date: "18/08/2022",
+      pocImg: sampleImage3,
+      pocName: "Aaryan Garg",
+      pocContact: "9461801125",
+    },
+    {
+      id: 3,
+      img: sampleImage2,
+      group: "DSG",
+      title: "ML review presentations",
+      date: "18/08/2022",
+      pocImg: sampleImage3,
+      pocName: "Aaryan Garg",
+      pocContact: "9461801125",
+    },
+    {
+      id: 4,
+      img: sampleImage2,
+      group: "DSG",
+      title: "ML review presentations",
+      date: "18/08/2022",
+      pocImg: sampleImage3,
+      pocName: "Aaryan Garg",
+      pocContact: "9461801125",
     },
   ];
   return (

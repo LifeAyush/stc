@@ -2,6 +2,7 @@ import React from "react";
 import "./team.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
+import sampleImage4 from "../../Assets/Images/sampleImg4.png";
 
 const Team = () => {
   const filter = [
@@ -32,6 +33,48 @@ const Team = () => {
     {
       id: 7,
       name: "Outreach",
+    },
+  ];
+  const teamData = [
+    {
+      id: 1,
+      img: sampleImage4,
+      name: "Somesh Solanki",
+      por: "Design Lead",
+      vertical: "Design",
+      linkedIn: "",
+      facebook: "",
+      instagram: "",
+    },
+    {
+      id: 2,
+      img: sampleImage4,
+      name: "Somesh Solanki",
+      por: "Design Lead",
+      vertical: "Design",
+      linkedIn: "",
+      facebook: "",
+      instagram: "",
+    },
+    {
+      id: 3,
+      img: sampleImage4,
+      name: "Somesh Solanki",
+      por: "Design Lead",
+      vertical: "Design",
+      linkedIn: "",
+      facebook: "",
+      instagram: "",
+    },
+    {
+      id: 4,
+      img: sampleImage4,
+      name: "Somesh Solanki",
+      por: "Design Lead",
+      vertical: "Design",
+      linkedIn: "",
+      facebook: "",
+      instagram: "",
     },
   ];
   return (
