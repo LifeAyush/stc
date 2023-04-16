@@ -2,51 +2,58 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
 import GroupCard from "../../Components/Cards/GroupCard/GroupCard";
-import sampleImage1 from "../../Assets/Images/sampleImg1.png";
-import sampleImage2 from "../../Assets/Images/sampleImg2.png";
+import groupLogo from "../../Assets/Images/groupLogo.svg";
 import { FiSearch } from "react-icons/fi";
 
 const Groups = () => {
   const groupData = [
     {
       id: 1,
-      img: sampleImage1,
+      logo: groupLogo,
       name: "SDS Labs",
       desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-      websiteLink: "",
+      notion: "",
       linkedIn: "",
-      facebook: "",
       instagram: "",
+      github: "",
+      website: "",
+      facebook: "",
     },
     {
       id: 2,
-      img: sampleImage2,
+      logo: groupLogo,
       name: "DSG",
       desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-      websiteLink: "",
+      notion: "",
       linkedIn: "",
-      facebook: "",
       instagram: "",
+      github: "",
+      website: "",
+      facebook: "",
     },
     {
       id: 3,
-      img: sampleImage2,
+      logo: groupLogo,
       name: "DSG",
       desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-      websiteLink: "",
+      notion: "",
       linkedIn: "",
-      facebook: "",
       instagram: "",
+      github: "",
+      website: "",
+      facebook: "",
     },
     {
       id: 4,
-      img: sampleImage2,
+      logo: groupLogo,
       name: "DSG",
       desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-      websiteLink: "",
+      notion: "",
       linkedIn: "",
-      facebook: "",
       instagram: "",
+      github: "",
+      website: "",
+      facebook: "",
     },
   ];
   return (
@@ -61,7 +68,7 @@ const Groups = () => {
           <div className="search-icon">
             <FiSearch />
           </div>
-          <input className="search-input" placeholder="Search"/>
+          <input className="search-input" placeholder="Search" />
         </div>
       </div>
       <div className="card-grid">

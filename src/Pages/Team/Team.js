@@ -1,79 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
 import TeamCard from "../../Components/Cards/TeamCard/TeamCard";
-import sampleImage4 from "../../Assets/Images/sampleImg4.png";
+import member from "../../Assets/Images/memberImage.png";
 
 const Team = () => {
-  const filter = [
+  const [filter, setFilter] = useState("All");
+  const filterOptions = [
     {
       id: 1,
-      name: "Leadership",
+      name: "All",
     },
     {
       id: 2,
-      name: "Operations",
+      name: "Leadership",
     },
     {
       id: 3,
-      name: "Design",
+      name: "Operations",
     },
     {
       id: 4,
-      name: "Development",
+      name: "Design",
     },
     {
       id: 5,
-      name: "Editorial",
+      name: "Development",
     },
     {
       id: 6,
-      name: "MultiMedia",
+      name: "Editorial",
     },
     {
       id: 7,
+      name: "MultiMedia",
+    },
+    {
+      id: 8,
       name: "Outreach",
     },
   ];
   const teamData = [
     {
       id: 1,
-      img: sampleImage4,
-      name: "Somesh Solanki",
-      por: "Design Lead",
-      vertical: "Design",
+      img: member,
+      name: "Aaryan Bidani",
+      por: "General Secretary Technical Affairs",
+      vertical: "Leadership",
       linkedIn: "",
-      facebook: "",
       instagram: "",
     },
     {
       id: 2,
-      img: sampleImage4,
-      name: "Somesh Solanki",
-      por: "Design Lead",
-      vertical: "Design",
+      img: member,
+      name: "Ashutosh Singla",
+      por: "Deputy General Secretary Technical Affairs",
+      vertical: "Leadership",
       linkedIn: "",
-      facebook: "",
       instagram: "",
     },
     {
       id: 3,
-      img: sampleImage4,
-      name: "Somesh Solanki",
-      por: "Design Lead",
-      vertical: "Design",
+      img: member,
+      name: "Aaryan Garg",
+      por: "Tech Manager",
+      vertical: "Leadership",
       linkedIn: "",
-      facebook: "",
       instagram: "",
     },
     {
       id: 4,
-      img: sampleImage4,
-      name: "Somesh Solanki",
-      por: "Design Lead",
-      vertical: "Design",
+      img: member,
+      name: "Ayush Patil",
+      por: "Tech Lead",
+      vertical: "Development",
       linkedIn: "",
-      facebook: "",
       instagram: "",
     },
   ];
@@ -83,17 +84,18 @@ const Team = () => {
       <div className="heading-section">
         <PageHeading title="Our Team" subTitle="We host many tech events" />
         <div className="filter">
-          {filter.map((item) => {
+          {filterOptions.map((item) => {
             return (
               <span
                 key={item.id}
                 className={
-                  item.id === filter.length
+                  item.id === filterOptions.length
                     ? "filter-item-right filter-item"
                     : item.id === 1
                     ? "filter-item-left filter-item"
                     : "filter-item"
                 }
+                onClick={() => setFilter(item.name)}
               >
                 {item.name}
               </span>
@@ -103,7 +105,11 @@ const Team = () => {
       </div>
       <div className="card-grid">
         {teamData.map((member, id) => {
-          return <TeamCard key={id} data={member} />;
+          if (filter === "All") {
+            return <TeamCard key={id} data={member} />;
+          } else if (member.vertical === filter) {
+            return <TeamCard key={id} data={member} />;
+          }
         })}
       </div>
     </div>

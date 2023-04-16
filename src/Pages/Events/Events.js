@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
 import EventCard from "../../Components/Cards/EventCard/EventCard";
-import sampleImage1 from "../../Assets/Images/sampleImg1.png";
-import sampleImage2 from "../../Assets/Images/sampleImg2.png";
-import sampleImage3 from "../../Assets/Images/sampleImg3.png";
+import poc from "../../Assets/Images/poc.png";
 
 const Events = () => {
   const filter = [
@@ -28,44 +26,45 @@ const Events = () => {
   const eventData = [
     {
       id: 1,
-      img: sampleImage1,
       group: "SDS Labs",
       title: "UX review presentations",
       date: "15/08/2022",
-      pocImg: sampleImage3,
+      desc: "As the sun slowly set over the horizon, a gentle breeze rustled the leaves of the tall trees in the distance, while a small group of birds chirped merrily on a nearby branch. In the distance, a lone wolf howled at the moon as a small stream trickled its way down the rocky terrain, glistening in the fading light",
+      pocImg: poc,
       pocName: "Somesh Solanki",
       pocContact: "9461801990",
     },
     {
       id: 2,
-      img: sampleImage2,
       group: "DSG",
       title: "ML review presentations",
-      date: "18/08/2022",
-      pocImg: sampleImage3,
-      pocName: "Aaryan Garg",
+      date: "17/10/2021",
+      desc: "As the sun slowly set over the horizon, a gentle breeze rustled the leaves of the tall trees in the distance, while a small group of birds chirped merrily on a nearby branch. In the distance, a lone wolf howled at the moon as a small stream trickled its way down the rocky terrain, glistening in the fading light",
+      pocImg: poc,
+      pocName: "Aryan Garg",
       pocContact: "9461801125",
     },
     {
       id: 3,
-      img: sampleImage2,
       group: "DSG",
       title: "ML review presentations",
-      date: "18/08/2022",
-      pocImg: sampleImage3,
-      pocName: "Aaryan Garg",
+      date: "17/10/2021",
+      desc: "As the sun slowly set over the horizon, a gentle breeze rustled the leaves of the tall trees in the distance, while a small group of birds chirped merrily on a nearby branch. In the distance, a lone wolf howled at the moon as a small stream trickled its way down the rocky terrain, glistening in the fading light",
+      pocImg: poc,
+      pocName: "Aryan Garg",
       pocContact: "9461801125",
     },
     {
       id: 4,
-      img: sampleImage2,
       group: "DSG",
       title: "ML review presentations",
-      date: "18/08/2022",
-      pocImg: sampleImage3,
-      pocName: "Aaryan Garg",
+      date: "17/10/2021",
+      desc: "As the sun slowly set over the horizon, a gentle breeze rustled the leaves of the tall trees in the distance, while a small group of birds chirped merrily on a nearby branch. In the distance, a lone wolf howled at the moon as a small stream trickled its way down the rocky terrain, glistening in the fading light",
+      pocImg: poc,
+      pocName: "Aryan Garg",
       pocContact: "9461801125",
     },
+    
   ];
   return (
     <div className="page">
