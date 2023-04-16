@@ -1,7 +1,7 @@
 import React from "react";
-import "./team.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
+import TeamCard from "../../Components/Cards/TeamCard/TeamCard";
 import sampleImage4 from "../../Assets/Images/sampleImg4.png";
 
 const Team = () => {
@@ -100,6 +100,11 @@ const Team = () => {
             );
           })}
         </div>
+      </div>
+      <div className="card-grid">
+        {teamData.map((member, id) => {
+          return <TeamCard key={id} data={member} />;
+        })}
       </div>
     </div>
   );

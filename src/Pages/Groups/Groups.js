@@ -1,7 +1,7 @@
 import React from "react";
-import "./groups.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
+import GroupCard from "../../Components/Cards/GroupCard/GroupCard";
 import sampleImage1 from "../../Assets/Images/sampleImg1.png";
 import sampleImage2 from "../../Assets/Images/sampleImg2.png";
 
@@ -55,6 +55,11 @@ const Groups = () => {
         title="Campus Groups"
         subTitle="These are workspaces of tech at IITR"
       />
+      <div className="card-grid">
+        {groupData.map((group, id) => {
+          return <GroupCard key={id} data={group} />;
+        })}
+      </div>
     </div>
   );
 };

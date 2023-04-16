@@ -5,7 +5,7 @@ import Groups from "./Pages/Groups/Groups";
 import Events from "./Pages/Events/Events";
 import Team from "./Pages/Team/Team";
 import Contact from "./Pages/Contact/Contact";
-import TeamCard from "./Components/Cards/TeamCard/TeamCard";
+import Test from "./Pages/Test/Test";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/tcard" element={<TeamCard />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
     </div>

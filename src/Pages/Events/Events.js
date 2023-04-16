@@ -1,7 +1,7 @@
 import React from "react";
-import "./events.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
+import EventCard from "../../Components/Cards/EventCard/EventCard";
 import sampleImage1 from "../../Assets/Images/sampleImg1.png";
 import sampleImage2 from "../../Assets/Images/sampleImg2.png";
 import sampleImage3 from "../../Assets/Images/sampleImg3.png";
@@ -90,6 +90,11 @@ const Events = () => {
             );
           })}
         </div>
+      </div>
+      <div className="card-grid">
+        {eventData.map((event, id) => {
+          return <EventCard key={id} data={event} />;
+        })}
       </div>
     </div>
   );
