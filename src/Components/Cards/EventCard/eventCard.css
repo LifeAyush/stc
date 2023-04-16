@@ -1,0 +1,77 @@
+.ecard {
+  display: flex;
+  flex-direction: column;
+  /* width: 392px; */
+  /* height: 490px; */
+  padding: 24px;
+  /* padding-top: 45px; */
+  background: rgb(102, 102, 102, 0.1);
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.ecard:hover {
+  background: rgba(102, 102, 102, 0.4);
+}
+
+.ecard h7 {
+  width: 268.8px;
+  height: 20px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.ecard h3 {
+  width: 268.8px;
+  height: 32px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.ecard h5 {
+  width: 268.8px;
+  height: 24px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f1f1f1;
+}
+
+.ecard p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f5f5f5;
+  height: 260px;
+}
+
+.ecard-b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 160px;
+  /* height: 50px; */
+  justify-content: space-between;
+}
+
+.ecard-b2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}

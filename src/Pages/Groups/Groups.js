@@ -13,7 +13,7 @@ const Groups = () => {
       name: "SDS Labs",
       desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
       notion: "",
-      linkedIn: "",
+      linkedIn: "https://www.linkedin.com/in/rishabh-gupta-35224324b/",
       instagram: "",
       github: "",
       website: "",
