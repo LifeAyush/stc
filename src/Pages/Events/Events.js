@@ -3,6 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
 import EventCard from "../../Components/Cards/EventCard/EventCard";
 import poc from "../../Assets/Images/poc.png";
+import Footer from "../../Components/Footer/Footer";
 
 const Events = () => {
   const filter = [
@@ -64,38 +65,40 @@ const Events = () => {
       pocName: "Aryan Garg",
       pocContact: "9461801125",
     },
-    
   ];
   return (
-    <div className="page">
-      <Navbar />
-      <div className="heading-section">
-        <PageHeading title="Our Events" subTitle="We host many tech events" />
-        <div className="filter">
-          {filter.map((item) => {
-            return (
-              <span
-                key={item.id}
-                className={
-                  item.id === filter.length
-                    ? "filter-item-right filter-item"
-                    : item.id === 1
-                    ? "filter-item-left filter-item"
-                    : "filter-item"
-                }
-              >
-                {item.name}
-              </span>
-            );
+    <>
+      <div className="page">
+        <Navbar />
+        <div className="heading-section">
+          <PageHeading title="Our Events" subTitle="We host many tech events" />
+          <div className="filter">
+            {filter.map((item) => {
+              return (
+                <span
+                  key={item.id}
+                  className={
+                    item.id === filter.length
+                      ? "filter-item-right filter-item"
+                      : item.id === 1
+                      ? "filter-item-left filter-item"
+                      : "filter-item"
+                  }
+                >
+                  {item.name}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+        <div className="card-grid">
+          {eventData.map((event, id) => {
+            return <EventCard key={id} data={event} />;
           })}
         </div>
       </div>
-      <div className="card-grid">
-        {eventData.map((event, id) => {
-          return <EventCard key={id} data={event} />;
-        })}
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import PageHeading from "../../Components/PageHeading/PageHeading";
 import GroupCard from "../../Components/Cards/GroupCard/GroupCard";
 import groupLogo from "../../Assets/Images/groupLogo.svg";
 import { FiSearch } from "react-icons/fi";
+import Footer from "../../Components/Footer/Footer";
 
 const Groups = () => {
   const groupData = [
@@ -57,26 +58,29 @@ const Groups = () => {
     },
   ];
   return (
-    <div className="page">
-      <Navbar />
-      <div className="heading-section">
-        <PageHeading
-          title="Campus Groups"
-          subTitle="These are workspaces of tech at IITR"
-        />
-        <div className="search">
-          <div className="search-icon">
-            <FiSearch />
+    <>
+      <div className="page">
+        <Navbar />
+        <div className="heading-section">
+          <PageHeading
+            title="Campus Groups"
+            subTitle="These are workspaces of tech at IITR"
+          />
+          <div className="search">
+            <div className="search-icon">
+              <FiSearch />
+            </div>
+            <input className="search-input" placeholder="Search" />
           </div>
-          <input className="search-input" placeholder="Search" />
+        </div>
+        <div className="card-grid">
+          {groupData.map((group, id) => {
+            return <GroupCard key={id} data={group} />;
+          })}
         </div>
       </div>
-      <div className="card-grid">
-        {groupData.map((group, id) => {
-          return <GroupCard key={id} data={group} />;
-        })}
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

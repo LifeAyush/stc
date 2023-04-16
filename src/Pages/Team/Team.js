@@ -3,6 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import PageHeading from "../../Components/PageHeading/PageHeading";
 import TeamCard from "../../Components/Cards/TeamCard/TeamCard";
 import member from "../../Assets/Images/memberImage.png";
+import Footer from "../../Components/Footer/Footer";
 
 const Team = () => {
   const [filter, setFilter] = useState("All");
@@ -79,40 +80,43 @@ const Team = () => {
     },
   ];
   return (
-    <div className="page">
-      <Navbar />
-      <div className="heading-section">
-        <PageHeading title="Our Team" subTitle="We host many tech events" />
-        <div className="filter">
-          {filterOptions.map((item) => {
-            return (
-              <span
-                key={item.id}
-                className={
-                  item.id === filterOptions.length
-                    ? "filter-item-right filter-item"
-                    : item.id === 1
-                    ? "filter-item-left filter-item"
-                    : "filter-item"
-                }
-                onClick={() => setFilter(item.name)}
-              >
-                {item.name}
-              </span>
-            );
+    <>
+      <div className="page">
+        <Navbar />
+        <div className="heading-section">
+          <PageHeading title="Our Team" subTitle="We host many tech events" />
+          <div className="filter">
+            {filterOptions.map((item) => {
+              return (
+                <span
+                  key={item.id}
+                  className={
+                    item.id === filterOptions.length
+                      ? "filter-item-right filter-item"
+                      : item.id === 1
+                      ? "filter-item-left filter-item"
+                      : "filter-item"
+                  }
+                  onClick={() => setFilter(item.name)}
+                >
+                  {item.name}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+        <div className="card-grid">
+          {teamData.map((member, id) => {
+            if (filter === "All") {
+              return <TeamCard key={id} data={member} />;
+            } else if (member.vertical === filter) {
+              return <TeamCard key={id} data={member} />;
+            }
           })}
         </div>
       </div>
-      <div className="card-grid">
-        {teamData.map((member, id) => {
-          if (filter === "All") {
-            return <TeamCard key={id} data={member} />;
-          } else if (member.vertical === filter) {
-            return <TeamCard key={id} data={member} />;
-          }
-        })}
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

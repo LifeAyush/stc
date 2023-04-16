@@ -1,10 +1,60 @@
-import React from 'react'
-import "./footer.css"
+import React from "react";
+import "./footer.css";
+import arrow from "../../Assets/Images/arrow.svg";
+import bottomGraphic from "../../Assets/Images/bottomGraphic.svg";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="footer">
+      <img
+        src={bottomGraphic}
+        alt="Graphic"
+        className="bottom-graphic non-draggable"
+      />
+      <div className="footer-content">
+        <h1 className="footer-title">
+          Brought to you by
+          <br />
+          Students’ Technical Council
+        </h1>
+        <div className="footer-flex">
+          <div className="footer-address">
+            <span className="footer-sub-text">Students’ Activity Centre</span>
+            <span className="footer-sub-text">Opp. Kasturba Bhawan</span>
+            <span className="footer-sub-text">IIT Roorkee</span>
+            <span className="footer-sub-text">
+              Roorkee, Uttarakhand - 247667
+            </span>
+          </div>
+          <div className="footer-contact">
+            <div className="footer-contact-flex">
+              <img
+                src={arrow}
+                className="footer-contact-flex-icon non-draggable"
+                alt="#"
+              />
+              <a
+                href="mailto:gensec.technical@iitr.ac.in"
+                className="footer-sub-text"
+              >
+                gensec.technical@iitr.ac.in
+              </a>
+            </div>
+            <div className="footer-contact-flex">
+              <img
+                src={arrow}
+                className="footer-contact-flex-icon non-draggable"
+                alt="#"
+              />
+              <div className="footer-sub-text">
+                Ashutosh Singh: +91 95602 83080
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
