@@ -1,0 +1,91 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 60px 112px;
+  align-items: flex-start;
+  justify-content: center;
+  background: #ffffff;
+}
+.features-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.features-subtitle {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1e1e1e;
+}
+.features-para {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #191919;
+  width: 1050px;
+}
+.features-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.features-flex-content {
+  display: flex;
+  flex-direction: column;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 18px 24px;
+  border-left: 4.2px solid rgba(245, 245, 245, 0.8);
+  width: 700px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.f-active {
+  border-left: 4.2px solid #222222;
+  transition: all 0.25s ease;
+}
+.feature-title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.4219px;
+  line-height: 32px;
+  color: rgba(34, 34, 34, 0.6);
+  transition: all 0.25s ease;
+}
+.feature-para {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.1376px;
+  line-height: 26px;
+  color: rgba(34, 34, 34, 0.6);
+  transition: all 0.25s ease;
+}
+.ft-active {
+  color: #222222 !important;
+  transition: all 0.25s ease;
+}
+.features-flex-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-mockup {
+  width: 600px;
+}
+.features-btn {
+  align-self: center;
+}
