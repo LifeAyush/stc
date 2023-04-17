@@ -1,18 +1,18 @@
 import React from "react";
 import "./eventCard.css";
 
-const EventCard = (props) => {
+const EventCard = ({ data }) => {
   return (
     <div className="ecard">
-      <h7>{props.data.group}</h7>
-      <h3>{props.data.title}</h3>
-      <h5>Date: {props.data.date}</h5>
-      <p>{props.data.desc}</p>
-      <div className="ecard-b">
-        <img src={props.data.pocImg} alt="" />
-        <div className="ecard-b2">
-          <h6>{props.data.pocName}</h6>
-          <h5>{props.data.pocContact}</h5>
+      <div className="ecard-group-name">{data.group}</div>
+      <div className="ecard-title">{data.title}</div>
+      <div className="ecard-date">Date: {data.date}</div>
+      <p className="ecard-para">{data.desc}</p>
+      <div className="ecard-btm">
+        <img src={data.pocImg} alt="" className="ecard-btm-img"/>
+        <div className="ecard-btm-flex">
+          <div className="ecard-btm-name">{data.pocName}</div>
+          <div className="ecard-btm-contact">{data.pocContact}</div>
         </div>
       </div>
     </div>

@@ -1,75 +1,71 @@
-.gcard{
-    display: flex;
-    flex-direction: column;
-    width: 392px;
-    /* height: 490px; */
-    padding: 24px;
-    padding-top: 45px;
-    background: rgb(102, 102, 102,0.1);
-border-radius: 20px;
+.gcard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  padding: 45px 24px 24px;
+  background: rgb(102, 102, 102, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
-
-.gcard:hover{
-    background: rgba(102, 102, 102,0.4);
+.gcard:hover {
+  background: rgba(102, 102, 102, 0.4);
 }
-
-.gcard-top{
-    display:flex;
-    justify-content: space-between;
+.gcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.gcard-top h2{
-    width: 207px;
-height: 64px;
-
-font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-/* or 133% */
-
-
-color: #FFFFFF;
+.gcard-top h2 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
 }
-
-.gcard-mid p{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-/* or 133% */
-
-
-color: #F9F9F9;
+.gcard-mid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-
-.gcard-mid a{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-color: #9E83E8;
+.gcard-mid p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f9f9f9;
+  height: 200px;
+  overflow-y: scroll;
 }
-
-.gcard-mid{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.gcard-mid p::-webkit-scrollbar {
+  display: none;
 }
-
-.gcard-bottom{
-    display: flex;
-    justify-content: flex-start;
-    gap: 3px;
+.gcard-link {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9e83e8;
 }
-
-.gcard-bottom a{
-    width: 24px;
-    height: 24px;
+.gcard-link-flex {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.gcard-link-icon {
+  margin-top: 4px;
+  font-size: 20px;
+  color: #9e83e8;
+}
+.gcard-bottom {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.gcard-bottom a {
+  font-size: 24px;
+  color: white;
 }

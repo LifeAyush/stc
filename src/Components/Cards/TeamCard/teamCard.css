@@ -1,57 +1,64 @@
-.tcard{
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px 15px 15px 15px;
-    gap: 46px;
-    width: 360px;
-    background-color: white;
-    padding-bottom: 23px;
-    /* height: 490px; */
+.tcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+  gap: 46px;
+  background-color: white;
+  padding-bottom: 54px;
+  transition: all 0.3s ease;
+  position: relative;
 }
-
 .tcard:hover {
-    background: rgba(102, 102, 102, 0.1);
-  }
-
-  .tcard:hover h1{
-    color: white;
-  }
-  .tcard:hover p{
-    color: white;
-  }
-
-  .tcard-mid{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 46px;
-  }
-
-.tcard h1{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 24px;
-color: #191919;
+  background: rgba(102, 102, 102, 0.1);
 }
-
-.tcard p{
-width: 352px;
-font-family: 'Outfit';
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-color: #191919;
+.tcard:hover h1 {
+  color: white;
 }
-
-.links{
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
+.tcard:hover p {
+  color: white;
+}
+.tcard:hover .team-links a {
+  color: #ffffff;
+}
+.tcard-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+.tcard h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 24px;
+  color: #191919;
+  transition: all 0.3s ease;
+}
+.tcard p {
+  width: 352px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #191919;
+  transition: all 0.3s ease;
+}
+.team-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 12px;
+}
+.team-links a {
+  font-size: 24px;
+  color: #191919;
+  transition: all 0.3s ease;
 }

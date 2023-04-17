@@ -1,42 +1,48 @@
 import React from "react";
 import "./groupCard.css";
-import img1 from "../../../Assets/Images/groupLogo.svg";
 import { FiArrowUpRight } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
+import { FaGithubSquare } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
 
-const GroupCard = (props) => {
-  console.log(props);
+const GroupCard = ({ data }) => {
   return (
     <div className="gcard">
       <div className="gcard-top">
-        <h2>{props.data.name}</h2>
-        
-        <img src={props.data.logo} alt="" />
+        <h2>{data.name}</h2>
+        <img src={data.logo} alt="" />
       </div>
       <div className="gcard-mid">
-        <p>{props.data.desc}</p>
-        <a href={props.data.notion}>
-          Resources <FiArrowUpRight />
+        <p>{data.desc}</p>
+        <a
+          href={data.notion}
+          target="_blank"
+          rel="noreferrer"
+          className="gcard-link-flex"
+        >
+          <span className="gcard-link">Resources</span>
+          <span className="gcard-link-icon">
+            <FiArrowUpRight />
+          </span>
         </a>
       </div>
       <div className="gcard-bottom">
-        <a href={props.data.linkedIn}>
-          <FaLinkedinIn />
+        <a href={data.linkedIn} target="_blank" rel="noreferrer">
+          <AiFillLinkedin />
         </a>
-        <a href={props.data.instagram}>
-          <FaInstagram />
+        <a href={data.instagram} target="_blank" rel="noreferrer">
+          <AiOutlineInstagram />
         </a>
-        <a href={props.data.github}>
-          <FaGithub />
+        <a href={data.github} target="_blank" rel="noreferrer">
+          <FaGithubSquare />
         </a>
-        <a href={props.data.website}>
-          <FaInstagram />
+        <a href={data.website} target="_blank" rel="noreferrer">
+          <BsGlobe />
         </a>
-        <a href={props.data.facebook}>
-          <FaFacebookF />
+        <a href={data.facebook} target="_blank" rel="noreferrer">
+          <AiFillFacebook />
         </a>
       </div>
     </div>

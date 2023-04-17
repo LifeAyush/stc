@@ -1,23 +1,22 @@
 import React from "react";
 import "./teamCard.css";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
-const TeamCard = (props) => {
-  console.log(props.data.name);
+const TeamCard = ({ data }) => {
   return (
     <div className="tcard">
-      <img src={props.data.img} alt="" />
+      <img src={data.img} alt="" />
       <div className="tcard-mid">
-        <h1>{props.data.name}</h1>
-        <p>{props.data.por}</p>
+        <h1>{data.name}</h1>
+        <p>{data.por}</p>
       </div>
-      <div className="links">
-        <a href={props.data.linkedIn}>
-          <FaLinkedinIn />
+      <div className="team-links">
+        <a href={data.linkedIn} target="_blank" rel="noreferrer">
+          <AiFillLinkedin />
         </a>
-        <a href={props.data.instagram}>
-          <FaInstagram />
+        <a href={data.instagram} target="_blank" rel="noreferrer">
+          <AiOutlineInstagram />
         </a>
       </div>
     </div>

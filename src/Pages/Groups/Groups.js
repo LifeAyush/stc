@@ -23,7 +23,7 @@ const Groups = () => {
     {
       id: 2,
       logo: groupLogo,
-      name: "DSG",
+      name: "Data Science Group",
       desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
       notion: "",
       linkedIn: "",
