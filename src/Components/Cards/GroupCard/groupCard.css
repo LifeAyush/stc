@@ -1,0 +1,75 @@
+.gcard{
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+    /* height: 490px; */
+    padding: 24px;
+    padding-top: 45px;
+    background: rgb(102, 102, 102,0.1);
+border-radius: 20px;
+}
+
+.gcard:hover{
+    background: rgba(102, 102, 102,0.4);
+}
+
+.gcard-top{
+    display:flex;
+    justify-content: space-between;
+}
+
+.gcard-top h2{
+    width: 207px;
+height: 64px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+
+color: #FFFFFF;
+}
+
+.gcard-mid p{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* or 133% */
+
+
+color: #F9F9F9;
+}
+
+.gcard-mid a{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+color: #9E83E8;
+}
+
+.gcard-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gcard-bottom{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.gcard-bottom a{
+    width: 24px;
+    height: 24px;
+}

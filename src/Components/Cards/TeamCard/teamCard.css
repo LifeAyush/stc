@@ -1,0 +1,57 @@
+.tcard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    gap: 46px;
+    width: 360px;
+    background-color: white;
+    padding-bottom: 23px;
+    /* height: 490px; */
+}
+
+.tcard:hover {
+    background: rgba(102, 102, 102, 0.1);
+  }
+
+  .tcard:hover h1{
+    color: white;
+  }
+  .tcard:hover p{
+    color: white;
+  }
+
+  .tcard-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+  }
+
+.tcard h1{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 24px;
+color: #191919;
+}
+
+.tcard p{
+width: 352px;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #191919;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
