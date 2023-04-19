@@ -1,0 +1,106 @@
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+  align-items: center;
+  background: #191919;
+  padding: 60px 112px;
+}
+.metrics-header {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+.metrics-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.metrics-header-text-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.metrics-logo-main {
+  width: 156px;
+  object-fit: cover;
+}
+.metrics-header-text-flex-title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.metrics-header-text-sub {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+.metrics-line {
+  height: 112px;
+  width: 2px;
+  background-color: #eaecf0;
+}
+.metrics-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+  padding-left: 40px;
+}
+.metrics-stat-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.metrics-stat-flex-number {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.metrics-stat-flex-text {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: #ffffff;
+}
+.metrics-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.metrics-logos-flex-large {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 76px;
+}
+.metrics-logos-flex-medium {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 76px;
+}
+.metrics-group-logo {
+  width: 100px;
+  object-fit: cover;
+}
