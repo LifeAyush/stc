@@ -1,0 +1,21 @@
+.ms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 112px;
+  gap: 64px;
+}
+.ms-light {
+  background: #ffffff;
+  color: #191919;
+}
+.ms-dark {
+  background: #191919;
+  color: #ffffff;
+}
+.ms-title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
