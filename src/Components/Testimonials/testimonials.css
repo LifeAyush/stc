@@ -6,6 +6,19 @@
   background: #ffffff;
   padding: 60px 112px;
 }
+.testimonial:hover .testimonial-content {
+  background: rgba(102, 102, 102, 0.1);
+}
+.testimonial:hover .testimonial-para {
+  color: #444444;
+}
+.testimonial:hover .testimonial-por {
+  color: #1e1e1e;
+}
+.testimonial:hover .testimonial-por-name {
+  color: #222222;
+}
+
 .testimonials-header {
   display: flex;
   flex-direction: column;
@@ -46,8 +59,9 @@
   justify-content: center;
   gap: 32px;
   padding: 64px;
-  background: rgba(102, 102, 102, 0.1);
+  background: rgba(30, 30, 30, 0.9);
   border-radius: 20px 0px 0px 20px;
+  transition: all 0.3s ease;
 }
 .testimonial-para {
   font-family: "Outfit";
@@ -56,7 +70,8 @@
   font-size: 36px;
   line-height: 122%;
   letter-spacing: -0.02em;
-  color: #444444;
+  color: #f5f5f5;
+  transition: all 0.3s ease;
 }
 .testimonial-por-flex {
   display: flex;
@@ -70,7 +85,8 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 156%;
-  color: #222222;
+  color: #f1f1f1;
+  transition: all 0.3s ease;
 }
 .testimonial-por {
   font-family: "Outfit";
@@ -78,5 +94,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }

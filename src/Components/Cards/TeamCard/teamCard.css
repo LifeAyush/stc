@@ -4,16 +4,16 @@
   width: 360px;
 }
 .tcard:hover .tcard-body {
-  background: rgba(245, 245, 245, 0.9);
+  background: rgba(102, 102, 102, 0.1);
 }
 .tcard:hover .tcard-header-title {
-  color: #191919;
+  color: #ffffff;
 }
 .tcard:hover .tcard-header-por {
-  color: #191919;
+  color: #ffffff;
 }
 .tcard:hover .tcard-link {
-  color: #191919;
+  color: #ffffff;
 }
 .tcard-img {
   width: 100%;
@@ -26,7 +26,7 @@
   gap: 36px;
   align-items: center;
   padding: 24px 4px 22px 4px;
-  background: rgba(102, 102, 102, 0.1);
+  background: rgba(245, 245, 245, 0.9);
   border-radius: 0px 0px 20px 20px;
   transition: all 0.3s ease;
 }
@@ -42,7 +42,7 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 120%;
-  color: #ffffff;
+  color: #191919;
   transition: all 0.3s ease;
 }
 .tcard-header-por {
@@ -52,7 +52,7 @@
   font-size: 20px;
   line-height: 120%;
   text-align: center;
-  color: #ffffff;
+  color: #191919;
   transition: all 0.3s ease;
 }
 .tcard-links {
@@ -62,7 +62,7 @@
 }
 .tcard-link {
   font-size: 24px;
-  color: #ffffff;
+  color: #191919;
   cursor: pointer;
   transition: all 0.3s ease;
 }
