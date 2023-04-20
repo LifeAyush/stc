@@ -1,0 +1,82 @@
+.testmonials {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 60px 112px;
+}
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.testimonials-title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  letter-spacing: -0.02em;
+  color: #191919;
+}
+.testimonials-subtitle {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.testimonial {
+  display: flex;
+  flex-direction: row;
+}
+.testimonial-img {
+  width: 464px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 0px 20px 20px 0px;
+}
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  padding: 64px;
+  background: rgba(102, 102, 102, 0.1);
+  border-radius: 20px 0px 0px 20px;
+}
+.testimonial-para {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 122%;
+  letter-spacing: -0.02em;
+  color: #444444;
+}
+.testimonial-por-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.testimonial-por-name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #222222;
+}
+.testimonial-por {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1e1e1e;
+}
