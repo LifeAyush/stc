@@ -43,14 +43,6 @@ const Navbar = () => {
         >
           Team
         </Link>
-        <Link
-          to="/contact"
-          className={
-            locator.pathname === "/contact" ? "nav-link nav-acitve" : "nav-link"
-          }
-        >
-          Contact Us
-        </Link>
       </div>
     </div>
   );
